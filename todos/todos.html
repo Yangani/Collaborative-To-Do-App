@@ -9,7 +9,7 @@
        ng-controller="TodosListCtrl">
 
   <header>
-    <h3>Todo List</h3>
+    <h2>Todo List</h2>
 
     <form class="new-task" ng-submit="addTask(newTask); newTask='';">
       <input ng-model="newTask" type="task"
@@ -18,7 +18,12 @@
   </header>
 
   <ul>
-    <li ng-repeat="task in tasks">{{task.text}}</li>
+    <li ng-repeat="task in tasks" ng-class="{'checked': task.checked}">
+      <button class="delete" ng-click="tasks.remove(task)">&times;</button>
+
+      <input type="checked" ng-model="task.checked" class="toggle-checked" />
+
+      <span class="text">{{task.text}}</span>
   </ul>
   <!-- {{> hello}} -->
   </div>
