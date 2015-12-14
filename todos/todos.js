@@ -19,7 +19,7 @@ if (Meteor.isClient) {
       };
 
       $scope.$watch('hideCompleted', function() {
-        if ($scope.hideComplted)
+        if ($scope.hideCompleted)
           $scope.query = {checked: {$ne: true}};
         else
           scope.query = {};
