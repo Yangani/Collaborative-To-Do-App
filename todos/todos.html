@@ -3,15 +3,20 @@
 </head>
 
 <body>
-  <h3>Todo List!</h3>
 
   <div class="container"
        ng-app="todos"
        ng-controller="TodosListCtrl">
 
-  </div>
+  <header>
+    <h3>Todo List</h3>
+  </header>
 
+  <ul>
+    <li ng-repeat="task in tasks">{{task.text}}</li>
+  </ul>
   <!-- {{> hello}} -->
+  </div>
 </body>
 
 <!-- <template name="hello">
