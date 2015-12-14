@@ -1,20 +1,22 @@
-Tasks = new Mongo.collection('tasks');
+Tasks = new Mongo.Collection('tasks');
 
 if (Meteor.isClient) {
+
   angular.module('todos',['angular-meteor']);
 
-  angular.module('todos').controller('TodosListCtrl', ['$scope',
-    function($scope) {
+  angular.module('todos').controller('TodosListCtrl', ['$scope', '$meteor',
+    function($scope, $meteor) {
 
-      $scope.tasks = [
-       {text: 'This is task 1'},
-       {text: 'This is task 2'},
-       {text: 'This is task 3'},
-       {text: 'This is task 4'},
-       {text: 'This is task 5'}
-      ];
-    }
-    ]);
+      $scope.tasks = $meteor.collection(Tasks);
+
+      $scope.addTask = function(newTask) {
+        $scope.tasks.push({
+          text:newTask,
+          createdAt: new Date()
+        });
+      };
+
+    }]);
 }
 
 

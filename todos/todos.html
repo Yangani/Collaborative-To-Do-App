@@ -10,6 +10,11 @@
 
   <header>
     <h3>Todo List</h3>
+
+    <form class="new-task" ng-submit="addTask(newTask); newTask='';">
+      <input ng-model="newTask" type="task"
+             name="text" placeholder="Please enter new task..."/>
+    </form>
   </header>
 
   <ul>
