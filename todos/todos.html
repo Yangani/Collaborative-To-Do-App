@@ -7,11 +7,11 @@
      ng-controller="TodosListCtrl">
 
   <header>
-    <h2>Todo List ( {{ incompleteCount() }} )</h2>
+    <h2>Todo List - <small font size="2" color="red">{{ incompleteCount() }}</small></h2>
 
     <label class="hide-completed">
       <input type="checkbox" ng-model="hideCompleted"/>
-      Hide Completed Tasks
+      Hide Completed
     </label>
 
     <login-buttons></login-buttons>
@@ -20,7 +20,7 @@
           ng-submit="addTask(newTask); newTask='';"
           ng-show="$root.currentUser">
       <input ng-model="newTask" type="text"
-             name="text" placeholder="Type to add new tasks" />
+             name="text" placeholder="Add new tasks" />
     </form>
 
   </header>
@@ -36,7 +36,7 @@
       <button class="toggle-private"
               ng-if="task.owner === $root.currentUser._id"
               ng-click="setPrivate(task)">
-        {{task.private === true ? "Private" : "Public"}}
+        {{task.private === true ? "Private" : "Everyone"}}
       </button>
 
       <span class="text">

@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   background-color: #315481;
-  background: linear-gradient(to left, #1F1C2C , #928DAB);
+  background: linear-gradient(to top, #E6DADA , #274046);
   background-attachment: fixed;
   position: absolute;
   top: 0;
@@ -28,7 +28,7 @@ header {
   padding: 20px 15px 15px 15px;
   position: relative;
   background: #d2edf4;
-  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  background-image: linear-gradient(to top, #3D7EAA , #FFE47A);
   padding: 20px 15px 15px 15px;
   position: relative;
   color: #685206;
@@ -42,6 +42,7 @@ header {
 #login-buttons {
   display: block;
   position: center;
+  text-decoration: none;
 }
 
 h2 {
