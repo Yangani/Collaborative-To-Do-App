@@ -1,54 +1,3 @@
-<!-- <head>
-  <title>Todo List</title>
-</head>
-
-<body>
-
-  <div class="container"
-       ng-app="todos"
-       ng-controller="TodosListCtrl">
-
-  <header>
-
-    <h2>Todo List ({{ incompleteCount()}})</h2>
-
-    <label class="hide-completed">
-      <input type="checkbox" ng-model="hideCompleted"/>
-      Hide Completed Tasks
-    </label>
-
-    <login-buttons></login-buttons>
-
-    <form class="new-task"
-          ng-submit="addTask(newTask); newTask='';"
-          ng-show="$root.currentUser">
-      <input ng-model="newTask" type="text"
-             name="text" placeholder="Please enter new task..." />
-    </form>
-
-  </header>
-
-  <ul>
-    <li ng-repeat="task in tasks" ng-class="{'checked': task.checked}">
-      <button class="delete" ng-click="deleteTask(task)">&times;</button>
-
-      <input type="checkbox" ng-checked="task.checked"
-             ng-click="setChecked(task)" class="toggle-checked" />
-
-      <span class="text">
-        <strong>{{task.username}}</strong> - {{task.text}}
-      </span>
-    </li>
-  </ul>
-  </div>
-</body> -->
-
-
-
-
-
-
-
 <head>
   <title>Todo List</title>
 </head>
@@ -67,7 +16,6 @@
 
     <login-buttons></login-buttons>
 
-    <!-- add a form below the h1 -->
     <form class="new-task"
           ng-submit="addTask(newTask); newTask='';"
           ng-show="$root.currentUser">
@@ -88,7 +36,7 @@
       <button class="toggle-private"
               ng-if="task.owner === $root.currentUser._id"
               ng-click="setPrivate(task)">
-        {{task.private == true ? "Private" : "Public"}}
+        {{task.private === true ? "Private" : "Public"}}
       </button>
 
       <span class="text">

@@ -1,9 +1,8 @@
 body {
   font-family: sans-serif;
   background-color: #315481;
-  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  background: linear-gradient(to left, #1F1C2C , #928DAB);
   background-attachment: fixed;
-
   position: absolute;
   top: 0;
   bottom: 0;
@@ -17,18 +16,18 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   min-height: 100%;
   background: white;
+  z-index: 1;
 }
 
 header {
   background: #d2edf4;
-  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
   padding: 20px 15px 15px 15px;
   position: relative;
-  /*background: #d2edf4;
+  background: #d2edf4;
   background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
   padding: 20px 15px 15px 15px;
   position: relative;
@@ -37,11 +36,12 @@ header {
   font-size: 14px;
   line-height: 24px; margin: 0 0 24px;
   text-align: justify;
-  text-justify: inter-word;*/
+  text-justify: inter-word;
 }
 
 #login-buttons {
   display: block;
+  position: center;
 }
 
 h2 {
@@ -50,7 +50,7 @@ h2 {
   margin-bottom: 10px;
   display: inline-block;
   margin-right: 1em;
-  /*font-size: 1.6em;
+  font-size: 1.6em;
   margin: 0;
   margin-bottom: 10px;
   display: inline-block;
@@ -60,7 +60,7 @@ h2 {
   font-weight: bold;
   letter-spacing: -1px;
   line-height: 1;
-  text-align: center;*/
+  text-align: center;
 }
 
 form {
@@ -71,12 +71,18 @@ form {
 
 .new-task input {
   box-sizing: border-box;
-  padding: 10px 0;
-  background: transparent;
-  border: none;
   width: 100%;
   padding-right: 80px;
   font-size: 1em;
+  border: 5px solid white;
+  -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+  padding: 15px;
+  background: rgba(255,255,255,0.5);
+  margin: 0 0 10px 0;
+  transition: border 0.5s;
+  border-radius: 13px;
 }
 
 .new-task input:focus{
