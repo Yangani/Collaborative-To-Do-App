@@ -2,7 +2,11 @@ Tasks = new Mongo.Collection('tasks');
 
 if (Meteor.isClient) {
 
-  angular.module('todos',['angular-meteor']);
+  // Accounts.ui.config({
+  //   passwordSignupFields: "USERNAME ONLY"
+  // });
+
+  angular.module('todos',['angular-meteor', 'accounts.ui']);
 
   angular.module('todos').controller('TodosListCtrl', ['$scope', '$meteor',
     function($scope, $meteor) {
