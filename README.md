@@ -1,4 +1,4 @@
-# To-Do-List
+# Collaborative Todo App
 To do app with Angular and Meteor
 
 The application allows multiple users, with private to do and shered to do.
