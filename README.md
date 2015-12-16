@@ -8,7 +8,7 @@ and meteor on the server-side with MongoDB for database.
 
 Combining Angular and Meteor creates a rich interactive, responsive and collaborative application.
 
-![Alt text](https://cloud.githubusercontent.com/assets/13487454/11828257/ce9bdf1e-a358-11e5-96ec-75db5d0ff9a8.png, "Todo List")
+![Alt text](https://cloud.githubusercontent.com/assets/13487454/11828257/ce9bdf1e-a358-11e5-96ec-75db5d0ff9a8.png)
 
 
 
