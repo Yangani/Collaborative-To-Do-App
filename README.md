@@ -1,7 +1,7 @@
-# Collaborative Todo App
+# Collaborative Todo List App
 To do app with Angular and Meteor
 
-The application allows multiple users, with private to do listn and public shared to do list.
+The application allows multiple users, with private todo list and public shared to do list.
 
 This application shows how one can combine the usage of both angular.js on the client-side 
 and meteor on the server-side with MongoDB for database.
