@@ -3,6 +3,8 @@ To do app with Angular and Meteor
 
 The application allows multiple users, with private todo list and public shared to do list.
 
+The application is updates quickly, taking advantage of meteor real time synching
+
 This application shows how one can combine the usage of both angular.js on the client-side 
 and node, meteor on the server-side with MongoDB for database.
 
